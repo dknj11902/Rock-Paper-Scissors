@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rock, Paper, Scissors!</title>
+    <!-- Defines how the browser should encode the characters -->
+    <meta charset="utf-8">
+    <!-- Link to CSS file (manages visual aspect of website) -->
+    <link type="text/css" rel=stylesheet href="style.css">
+    <!-- Link to jQuery library hosted by Google -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  </head>
+  <body>
+    <!-- Main game/animations script -->
+    <script src="GameHandler.js"></script>
+    <!-- Title -->
+    <h1>Rock, Paper, Scissors!</h1>
+    <div id="instructions">
+      <!-- Introduction -->
+      <p>Try to defeat the computer in a classic game of rock, paper, scissors!<br /><br />The computer randomly makes its decision each time.<br /><br />Select your choice below.<br><br></p>
+    </div>
+    <div class="buttons">
+      <!-- Rock, Paper, Scissors buttons -->
+      <button type="button" id="rock">Rock</button>
+      <button type="button" id="paper">Paper</button>
+      <button type="button" id="scissors">Scissors</button>
+    </div>
+    <!-- "You threw: X" text -->
+    <p class="result" id="userInputDisplay"></p>
+    <!-- "The computer threw: X" text -->
+    <p class="result" id="computerInput"></p>
+    <!-- Text that displays who won (or a tie) -->
+    <strong><p class="result" id="whoWon"></p></strong>
+    <br /><br />
+    <!-- Scores Table -->
+    <div id="resultTable">
+      <table>
+        <tr>
+          <th>Wins</th>
+          <th>Ties</th>
+          <th>Losses</th>
+        </tr>
+        <tr>
+          <td id="wins"></td>
+          <td id="ties"></td>
+          <td id="losses"></td>
+        </tr>
+    </table>
+    </div>
+    <br /><br /><br />
+    <div id="lastButtons">
+      <!-- "Play again" button -->
+      <button type="button" id="replayButton">Play again</button>
+      <!-- "Reset Scores" button -->
+      <button type="button" id="resetScoresButton">Reset Scores</button>
+    </div>
+  </body>
+</html>
